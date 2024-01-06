@@ -9,7 +9,7 @@ def send_email(body, header, timedate):
     body_details = list(body[0])
     message_log = body_details[1].replace("(", "").replace(")", "")
     
-    command = f'echo "A new attack detected at {timedate}: {body}" | mail -s "Suricata detected a {header} attack" -a "From: suricata@terrasystems.com" jasonleeweekang@gmail.com'
+    command = f'echo "A new attack detected at {timedate}: {message_log}" | mail -s "Suricata detected a {header} attack" -a "From: suricata@terrasystems.com" jasonleeweekang@gmail.com'
     # Executing the mail command in the Linux command line
     os.system(command)
     print("Email alert sent")
