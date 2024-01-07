@@ -1,3 +1,8 @@
+# Prerequisites:
+# 1. Mailutils and Postfix installed on Linux machine
+# 2. Postfix SMTP server configured
+# 3. Suricata to be installed in default directories
+
 import pandas as pd
 import os
 import re
