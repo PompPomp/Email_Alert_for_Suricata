@@ -52,4 +52,4 @@ def check_log_file(filename):
 
 
 while True:
-    check_log_file("./fast2.log")
+    check_log_file("/var/log/suricata/fast.log")
